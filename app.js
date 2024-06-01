@@ -11,7 +11,7 @@ const bodyParser = require("body-parser");
 const app = express();
 //connecting to DB
 const mdburl='';
-mongoose.connect(mdburl,{useNewUrlParser: true,useUnifiedTopology:true})
+mongoose.connect(mdburl)
 .then((result)=>app.listen(3000))
 .catch((err)=>console.log(err));
 
