@@ -10,7 +10,7 @@ const bodyParser = require("body-parser");
 // express app
 const app = express();
 //connecting to DB
-const mdburl='mongodb+srv://Abhidemo03:9696858107@cluster0.jf2t9qo.mongodb.net/NodeJs?retryWrites=true&w=majority';
+const mdburl='';
 mongoose.connect(mdburl,{useNewUrlParser: true,useUnifiedTopology:true})
 .then((result)=>app.listen(3000))
 .catch((err)=>console.log(err));
